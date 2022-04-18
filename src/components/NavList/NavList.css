@@ -1,0 +1,18 @@
+.nav__list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__folders {
+  font-size: 24px;
+}
+
+.nav__folders_active {
+  font-weight: bold;
+}
+
+.nav__folders:hover {
+  cursor: pointer;
+}
