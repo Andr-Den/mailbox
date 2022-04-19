@@ -7,6 +7,8 @@
 
 .nav__folders {
   font-size: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .nav__folders_active {
@@ -15,4 +17,61 @@
 
 .nav__folders:hover {
   cursor: pointer;
+}
+.added-folders {
+  display: flex;
+  flex-direction: column;
+}
+
+.added-folders__button {
+  border: none;
+  background: #222222;
+  border-radius: 48px;
+  background-image: url(../../images/Add.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.added-folders__delete-icon {
+  margin-left: 3px;
+  margin-bottom: 3px;
+  border: none;
+  background: #222222;
+  border-radius: 48px;
+  background-image: url(../../images/delete-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+
+.added-folders__edit-icon {
+  margin-left: 3px;
+  margin-bottom: 3px;
+  border: none;
+  background: #222222;
+  border-radius: 48px;
+  background-image: url(../../images/edit.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+
+.added-folders__button:hover {
+  cursor: pointer;
+}
+
+.added-folders__delete-icon:hover {
+  cursor: pointer;
+}
+
+.added-folders__form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
