@@ -4,10 +4,10 @@ import './MailCard.css';
 function MailCard({ card, onClose }) {
   if (!card) return null;
   return (
-    <div className="popup">
-      <div className="popup__container">
-        <button className="popup__icon" onClick={onClose} />
-        <div className="popup__header">
+    <div className="mail-card">
+      <div className="mail-card__container">
+        <button className="mail-card__icon" onClick={onClose} />
+        <div className="mail-card__header">
           <h3>{card.author}</h3>
           <p>{card.date}</p>
         </div>
