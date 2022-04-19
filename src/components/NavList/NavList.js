@@ -24,15 +24,12 @@ const folders = [
   },
 ];
 
-function NavList({ currentFolder, setCurrentFolder }) {
-  function handleFolderClick(id) {
-    setCurrentFolder(id);
-  }
+function NavList({ currentFolder, handleFoldersChange }) {
 
   return (
     <ul className="nav__list">
       {folders.map(({ name, id }) => (
-        <li className={`nav__folders ${currentFolder === id ? 'nav__folders_active' : ''}`} onClick={() => handleFolderClick(id)} key={id}>{name}</li>
+        <li className={`nav__folders ${currentFolder === id ? 'nav__folders_active' : ''}`} onClick={() => handleFoldersChange(id)} key={id}>{name}</li>
       ))}
     </ul>
   );

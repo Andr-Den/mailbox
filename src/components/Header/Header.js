@@ -5,12 +5,12 @@ import './Header.css';
 
 import logo from '../../images/mail.png';
 
-function Header() {
+function Header({setSearchInput, handleSearch}) {
   return (
     <header className="header">
       <Container>
         <img src={logo} alt="логотип" className="header__logo" />
-        <SearchForm />
+        <SearchForm setSearchInput={setSearchInput} handleSearch={handleSearch}/>
       </Container>
     </header>
   );

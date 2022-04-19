@@ -66,15 +66,30 @@ const mailsList = [
 
 function App() {
   const [currentFolder, setCurrentFolder] = useState(1);
+  const [mails, setMails] = useState(mailsList.filter((mail) => mail.folderId === 1));
+  const [searchInput, setSearchInput] = useState('');
 
-  const mails = (currentFolder) => mailsList.filter((mail) => mail.folderId === currentFolder);
+  function handleFoldersChange(currentFolderId) {
+    const mails = mailsList.filter((mail) => mail.folderId === currentFolderId);
+    setMails(mails)
+    setCurrentFolder(currentFolderId)
+  }
+
+  function handleSearch(e) {
+    e.preventDefault(); 
+    const searchMails = mailsList.filter((mail) => (mail.author.toLowerCase().includes(searchInput.toLowerCase())) || 
+      (mail.text.toLowerCase().includes(searchInput.toLowerCase())) || 
+      (mail.date.toLowerCase().includes(searchInput.toLowerCase())));
+    setMails(searchMails)
+    setCurrentFolder('')
+  }
 
   return (
     <div className="App">
-      <Header />
+      <Header setSearchInput={setSearchInput} handleSearch={handleSearch}/>
       <Container>
-        <NavList currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} />
-        <MailsList mails={mails(currentFolder)} />
+        <NavList handleFoldersChange={handleFoldersChange} currentFolder={currentFolder}/>
+        <MailsList mails={mails} />
       </Container>
     </div>
   );
