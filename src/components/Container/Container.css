@@ -4,3 +4,24 @@
   grid-template-columns: repeat(12, 1fr);
   max-width: 1280px;
 }
+
+@media screen and (max-width: 1300px){
+  .container {
+    max-width: 920px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

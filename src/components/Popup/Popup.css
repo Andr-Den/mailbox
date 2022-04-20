@@ -64,3 +64,10 @@
 .popup__button:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 682px){
+  .popup__icon {
+    top: -40px;
+    right: 0;
+  }
+}
