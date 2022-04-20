@@ -25,3 +25,7 @@ npm run build
 ```bash
 npm run start
 ```
+
+## GitHub Pages
+
+https://andr-den.github.io/mailbox/
