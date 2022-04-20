@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mailbox/static/css/main.31abce74.css",
+    "main.css": "/mailbox/static/css/main.b4ec1b57.css",
     "main.js": "/mailbox/static/js/main.5c5b8b33.js",
     "static/js/787.5bbe79e1.chunk.js": "/mailbox/static/js/787.5bbe79e1.chunk.js",
     "index.html": "/mailbox/index.html",
@@ -10,12 +10,12 @@
     "static/media/edit.svg": "/mailbox/static/media/edit.8667ac4a523e8fc42e59.svg",
     "static/media/CloseIcon.svg": "/mailbox/static/media/CloseIcon.2ceb783afbab75916ddc.svg",
     "static/media/Add.svg": "/mailbox/static/media/Add.d86bb2edc2f6eadb96b7.svg",
-    "main.31abce74.css.map": "/mailbox/static/css/main.31abce74.css.map",
+    "main.b4ec1b57.css.map": "/mailbox/static/css/main.b4ec1b57.css.map",
     "main.5c5b8b33.js.map": "/mailbox/static/js/main.5c5b8b33.js.map",
     "787.5bbe79e1.chunk.js.map": "/mailbox/static/js/787.5bbe79e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31abce74.css",
+    "static/css/main.b4ec1b57.css",
     "static/js/main.5c5b8b33.js"
   ]
 }
